@@ -4,8 +4,8 @@ import 'package:network_aware/network_aware.dart';
 import 'package:overlay_support/overlay_support.dart';
 
 class NetworkAware extends StatefulWidget {
-  ///Accepte a [MaterialApp] widget
-  final MaterialApp child;
+  ///Typically a [MaterialApp] widget or any widget you want desendants to be network aware
+  final Widget child;
 
   /// If Network Indicator Widget should be dismissible, defaults to [true]
   final bool canDismiss;
