@@ -7,7 +7,7 @@ class NetworkAware extends StatefulWidget {
   ///Typically a [MaterialApp] widget or any widget you want desendants to be network aware
   final Widget child;
 
-  /// If Network Indicator Widget should be dismissible, defaults to [true]
+  /// If Network Indicator Widget should be dismissible and if user user are allowed to interact with the app if network is turned off, defaults to [true]
   final bool canDismiss;
 
   /// Network Prompt [Widget] to display when users loose internet connection
@@ -16,10 +16,12 @@ class NetworkAware extends StatefulWidget {
   /// Anchor Position for [indicatorWidget]
   final NetworkAwarePosition position;
   NetworkAware(
-      {@required this.indicatorWidget,
+      {Key key,
+      @required this.indicatorWidget,
       this.child,
       this.canDismiss = true,
-      this.position = NetworkAwarePosition.TOP});
+      this.position = NetworkAwarePosition.TOP})
+      : super(key: key);
   @override
   _NetworkAwareState createState() => _NetworkAwareState();
 }

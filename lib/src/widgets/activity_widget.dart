@@ -32,7 +32,7 @@ class _ActivityWidgetState extends State<ActivityWidget> {
         color: Colors.transparent,
         child: Container(
           color: Colors.transparent,
-          height: size.height,
+          height: widget.canDismiss ? null : size.height,
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.center,

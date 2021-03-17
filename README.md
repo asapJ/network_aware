@@ -1,7 +1,7 @@
 # network_aware
 
 A Flutter package that enables your flutter apps to be network aware.
-It overlays a widget over your app when internet connection is off.
+It overlays a widget over your app when internet connection is off. You can choose to allow users interact/dismiss the prompt or block all interactions.
 ## Compatibility
 Android and IOS
 
